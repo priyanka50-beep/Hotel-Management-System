@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Palace Hotel - 3D Dish Menu</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="menu-container">
+    <h1 class="hotel-name">Royal Palace Hotel</h1>
+    <p class="tagline"><b>Taste the tradition, love the flavor</b></p>
+
+    <!-- STARTERS -->
+    <div class="menu-section">
+        <h2>Starters</h2>
+
+        <div class="menu-item">
+            <button class="order-btn">Place Order</button>
+
+            <div class="image-wrapper">
+                <img src="images/tom.jpg">
+            </div>
+
+            <div class="item-content">
+                <div class="item-header">
+                    <span>Tomato Soup</span>
+                    <span class="price">₹150</span>
+                </div>
+                <p class="description">Fresh creamy tomato soup with herbs.</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <button class="order-btn">Place Order</button>
+
+            <div class="image-wrapper">
+                <img src="images/roll.jpg">
+            </div>
+
+            <div class="item-content">
+                <div class="item-header">
+                    <span>Veg Spring Rolls</span>
+                    <span class="price">₹180</span>
+                </div>
+                <p class="description">Crispy vegetable stuffed rolls.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- MAIN COURSE -->
+    <div class="menu-section">
+        <h2>Main Course</h2>
+
+        <div class="menu-item">
+            <button class="order-btn">Place Order</button>
+
+            <div class="image-wrapper">
+                <img src="images/biriyani.jpg">
+            </div>
+
+            <div class="item-content">
+                <div class="item-header">
+                    <span>Veg Biryani</span>
+                    <span class="price">₹430</span>
+                </div>
+                <p class="description">Aromatic rice with spices and vegetables.</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <button class="order-btn">Place Order</button>
+
+            <div class="image-wrapper">
+                <img src="images/pizza.jpg">
+            </div>
+
+            <div class="item-content">
+                <div class="item-header">
+                    <span>Veg Pizza</span>
+                    <span class="price">₹200</span>
+                </div>
+                <p class="description">Loaded with fresh veggies and cheese.</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+const buttons = document.querySelectorAll(".order-btn");
+
+buttons.forEach(button => {
+    button.addEventListener("click", function() {
+        alert("Your order has been placed successfully!");
+    });
+});
+
+</script>
+
+</body>
+</html>
